@@ -69,6 +69,11 @@ Grok Build reads Claude Code marketplaces, so the Claude Code commands above are
   when the app is not installed.
 - `.claude-plugin/` and `.cursor-plugin/`: the marketplace manifests.
 
+Nothing in the plugin makes a network connection, downloads code or installs packages. The
+launcher only runs the Keeploop app's connector on your Mac, and that talks to the Keeploop app
+over a local connection. What the app itself can send, and only when you turn it on, is listed in
+the [privacy policy](https://keeploop.app/privacy).
+
 ## Privacy and support
 
 - Privacy: <https://keeploop.app/privacy>
