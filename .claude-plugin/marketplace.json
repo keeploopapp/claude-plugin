@@ -1,0 +1,32 @@
+{
+  "name": "keeploop",
+  "owner": {
+    "name": "Keeploop",
+    "email": "help@keeploop.app"
+  },
+  "metadata": {
+    "description": "Keeploop for Claude Code. The personal context layer for your AI.",
+    "version": "0.17.0"
+  },
+  "plugins": [
+    {
+      "name": "keeploop",
+      "source": "./plugins/keeploop",
+      "description": "The personal context layer for your AI. Connects Claude Code to the Keeploop app on this Mac (in /Applications or ~/Applications).",
+      "version": "0.17.0",
+      "author": {
+        "name": "Keeploop"
+      },
+      "homepage": "https://keeploop.app",
+      "repository": "https://github.com/keeploopapp/claude-plugin",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "email",
+        "apple-mail",
+        "mcp",
+        "macos"
+      ]
+    }
+  ]
+}

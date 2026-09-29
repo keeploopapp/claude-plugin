@@ -1,0 +1,18 @@
+#!/bin/sh
+# Execs the connector inside the installed app. exec replaces this shell, so the process the
+# core sees is the app's own signed mailroom-mcp. Mailroom.app is an install from before the
+# rename that Sparkle updated in place (it keeps its file name).
+run() {
+  app=$1; shift
+  if [ -x "$app/Contents/MacOS/mailroom-mcp" ]; then
+    exec "$app/Contents/MacOS/mailroom-mcp" "$@"
+  fi
+}
+run "/Applications/Keeploop.app" "$@"
+run "/Applications/Mailroom.app" "$@"
+# Only an absolute HOME: a relative one would resolve against the client's cwd.
+case "$HOME" in /*) run "$HOME/Applications/Keeploop.app" "$@"; run "$HOME/Applications/Mailroom.app" "$@" ;; esac
+# The SessionStart hook: with no app installed there is nothing to tell, and nothing to say.
+case " $* " in *" --report-session "*) exit 0 ;; esac
+echo "Keeploop is not installed on this Mac. Install Keeploop from https://keeploop.app into /Applications (or ~/Applications), open it once to finish setup, then restart this app." >&2
+exit 1

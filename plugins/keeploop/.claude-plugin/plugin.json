@@ -1,0 +1,17 @@
+{
+  "name": "keeploop",
+  "version": "0.17.0",
+  "description": "The personal context layer for your AI. Mail tools and the /keep- commands for Claude Code, from the Keeploop app on this Mac.",
+  "author": {
+    "name": "Keeploop"
+  },
+  "homepage": "https://keeploop.app",
+  "repository": "https://github.com/keeploopapp/claude-plugin",
+  "keywords": [
+    "email",
+    "apple-mail",
+    "mcp",
+    "macos"
+  ],
+  "license": "MIT"
+}

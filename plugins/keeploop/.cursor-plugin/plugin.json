@@ -1,0 +1,22 @@
+{
+  "name": "keeploop",
+  "version": "0.17.0",
+  "description": "The personal context layer for your AI. Keeploop's mail tools and the /keep- commands in Cursor, from the Keeploop app on your Mac.",
+  "author": {
+    "name": "Keeploop",
+    "email": "help@keeploop.app"
+  },
+  "homepage": "https://keeploop.app",
+  "repository": "https://github.com/keeploopapp/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "email",
+    "apple-mail",
+    "mcp",
+    "macos"
+  ],
+  "logo": "assets/logo.svg",
+  "skills": "./skills/",
+  "mcpServers": "./cursor/mcp.json",
+  "hooks": "./cursor/hooks.json"
+}

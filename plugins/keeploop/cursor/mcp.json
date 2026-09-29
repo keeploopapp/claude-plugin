@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "keeploop": {
+      "command": "${CURSOR_PLUGIN_ROOT}/server/mailroom-mcp",
+      "args": ["--client", "cursor"]
+    }
+  }
+}
