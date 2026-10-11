@@ -2,7 +2,7 @@
 
 [Keeploop](https://keeploop.app) is the personal context layer for your AI: a Mac menu bar app
 that lets the AI apps you already use read your Mail, Messages, Calendar, Notes and Slack, right
-on your Mac. Everything stays on your Mac, and you decide what each AI can see and do.
+on your Mac. Your data stays on your Mac, and you decide what each AI can see and do.
 
 This repository is the plugin marketplace for Keeploop. The plugin adds:
 
@@ -58,10 +58,24 @@ plugin source. The plugin reports itself to Keeploop as Cursor, so Keeploop's pe
 
 Grok Build reads Claude Code marketplaces, so the Claude Code commands above are all it needs.
 
+### Web and phone AI apps (Claude, ChatGPT, Grok, Poke and others)
+
+The plugin is for AI apps on your Mac. To use Keeploop from claude.ai, ChatGPT (including dots),
+grok.com, Poke or any app that can add a custom MCP connector, add this one URL:
+
+```
+https://mcp.keeploop.app/mcp
+```
+
+Sign in to Keeploop in the window the app opens, then approve the app on your Mac. The same URL
+works for every user; it reaches your Mac only after you approve it there. Remote apps are Read
+only until you allow more in Keeploop. Step by step for each app:
+<https://keeploop.app/your-ai-apps>.
+
 ## What the plugin contains
 
-- `plugins/keeploop/server/mailroom-mcp`: a shell launcher that runs the connector inside
-  `Keeploop.app` (its signed `Contents/MacOS/mailroom-mcp`). The Keeploop app checks that
+- `plugins/keeploop/server/keeploop-mcp`: a shell launcher that runs the connector inside
+  `Keeploop.app` (its signed `Contents/MacOS/keeploop-mcp`). The Keeploop app checks that
   signature and applies your permissions to every call.
 - `plugins/keeploop/skills/keep-*`: the commands, as plain Markdown.
 - `plugins/keeploop/hooks/hooks.json`: a Claude Code `SessionStart` hook that tells Keeploop
@@ -71,12 +85,30 @@ Grok Build reads Claude Code marketplaces, so the Claude Code commands above are
 
 Nothing in the plugin makes a network connection, downloads code or installs packages. The
 launcher only runs the Keeploop app's connector on your Mac, and that talks to the Keeploop app
-over a local connection. What the app itself can send, and only when you turn it on, is listed in
-the [privacy policy](https://keeploop.app/privacy).
+over a local connection, so there is no Keeploop server in the path. If you also use Keeploop from
+a web or phone AI app, that is a separate connection: your data stays on your Mac, and Keeploop's
+connection service passes requests to your Mac and results back. It never stores them. What the
+app itself can send, and only when you turn it on, is listed in the
+[privacy policy](https://keeploop.app/privacy).
 
-## Privacy and support
+## Privacy Policy
 
-- Privacy: <https://keeploop.app/privacy>
+The full policy is at <https://keeploop.app/privacy>. In short:
+
+- **Collection:** this plugin collects nothing. It starts the Keeploop app's connector, which
+  reads the Apple Mail data (and any other source you turn on) already on your Mac, only when
+  your AI app calls a tool.
+- **Use and storage:** results go to the AI app that asked, on your Mac. Keeploop keeps its
+  settings and monitors on your Mac only.
+- **Sharing:** none. With the plugin there is no Keeploop server in the path. If you also use
+  the web and phone URL above, our connection service passes requests to your Mac and results
+  back and never stores them.
+- **Retention:** the plugin keeps no data. The connection service keeps account, device and
+  approval records until you delete them, and security event metadata for 30 days.
+- **Contact:** help@keeploop.app
+
+## Support
+
 - Terms: <https://keeploop.app/terms>
 - Support: <https://keeploop.app/support> or help@keeploop.app
 

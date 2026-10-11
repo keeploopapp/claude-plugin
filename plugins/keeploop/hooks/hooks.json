@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "\"${CLAUDE_PLUGIN_ROOT}/server/mailroom-mcp\" --report-session --client claude-code",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/server/keeploop-mcp\" --report-session --client claude-code",
             "timeout": 10
           }
         ]

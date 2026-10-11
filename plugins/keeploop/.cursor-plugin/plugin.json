@@ -1,6 +1,6 @@
 {
   "name": "keeploop",
-  "version": "0.17.0",
+  "version": "0.23.1",
   "description": "The personal context layer for your AI. Keeploop's mail tools and the /keep- commands in Cursor, from the Keeploop app on your Mac.",
   "author": {
     "name": "Keeploop",
