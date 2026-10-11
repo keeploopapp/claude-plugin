@@ -7,6 +7,10 @@
   },
   "homepage": "https://keeploop.app",
   "repository": "https://github.com/keeploopapp/claude-plugin",
+  "documentationUrl": "https://keeploop.app/your-ai-apps",
+  "privacyPolicyUrl": "https://keeploop.app/privacy",
+  "termsOfServiceUrl": "https://keeploop.app/terms",
+  "supportUrl": "https://keeploop.app/support",
   "keywords": [
     "email",
     "apple-mail",
