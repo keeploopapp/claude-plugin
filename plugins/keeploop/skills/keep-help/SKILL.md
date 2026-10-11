@@ -15,5 +15,7 @@ Keeploop commands:
 - `/keep-draft <mail id> <what to say>`: Draft a threaded reply that sounds like you. Saves a draft only; never sends.
 - `/keep-find <description>`: Find a file someone sent you by describing it, then read the best match.
 - `/keep-waiting`: Mail you sent that nobody has answered yet, oldest first, with a nudge suggestion.
+- `/keep-today`: Today's schedule, the replies you owe, and today's monitor hits, in one short view.
+- `/keep-free [length and range]`: Open slots on your calendar for a length and a range, for example 30m this week.
 
 If another command already uses one of these names, type it as /keeploop:<name>, for example /keeploop:keep-settings.

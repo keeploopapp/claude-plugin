@@ -6,24 +6,28 @@ on your Mac. Your data stays on your Mac, and you decide what each AI can see an
 
 This repository is the plugin marketplace for Keeploop. The plugin adds:
 
-- **The Keeploop tools** (search mail, read threads and attachments, monitors that wake the agent
-  when a reply lands, drafts in your voice). They come from the Keeploop app through a small
-  launcher; nothing in this repository reads your mail itself.
+- **The Keeploop tools** (mail, threads and attachments, calendar and free time, messages, notes,
+  contacts and Slack, monitors that wake the agent when a reply lands, drafts in your voice).
+  They come from the Keeploop app through a small launcher; nothing in this repository reads
+  your data itself.
 - **The `/keep-` commands**:
 
 | Command | What it does |
 |---|---|
+| `/keep-today` | Today's schedule, the replies you owe, and today's monitor hits |
+| `/keep-free [length and range]` | Open slots on your calendar, for example `/keep-free 30m this week` |
 | `/keep-brief [account or category]` | Unread mail, what needs a reply, and today's monitor hits |
 | `/keep-reply` | Threads where someone is waiting on you, with a suggested next step each |
 | `/keep-thread <subject or mail id>` | Summarize a whole conversation: decisions and open questions |
 | `/keep-draft <mail id> <what to say>` | Draft a threaded reply that sounds like you. Saves a draft only |
 | `/keep-find <description>` | Find a file someone sent you by describing it |
 | `/keep-waiting` | Mail you sent that nobody has answered yet, oldest first |
+| `/keep-settings [what to change]` | See what the AI can do, or propose a change for approval on your Mac |
 | `/keep-help` | List the commands |
 
 ## Requirements
 
-- An Apple Silicon Mac on macOS 26 or later, with Apple Mail set up.
+- An Apple Silicon Mac on macOS 26 or later.
 - **The Keeploop app**, installed in `/Applications` (or `~/Applications`) and opened once.
   Get it at [keeploop.app](https://keeploop.app). Without the app the plugin's server stops with
   "Keeploop is not installed on this Mac. Install Keeploop from https://keeploop.app ...".

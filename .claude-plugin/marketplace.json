@@ -12,7 +12,7 @@
     {
       "name": "keeploop",
       "source": "./plugins/keeploop",
-      "description": "The personal context layer for your AI. Connects Claude Code to the Keeploop app on this Mac (in /Applications or ~/Applications).",
+      "description": "Your Mac's Mail, Calendar, Messages, Notes, Contacts and Slack in Claude Code, through the Keeploop app. You choose what Claude can see and do.",
       "version": "0.23.1",
       "author": {
         "name": "Keeploop"
@@ -23,9 +23,13 @@
       "category": "productivity",
       "keywords": [
         "email",
-        "apple-mail",
-        "mcp",
-        "macos"
+        "calendar",
+        "imessage",
+        "notes",
+        "slack",
+        "contacts",
+        "macos",
+        "mcp"
       ]
     }
   ]

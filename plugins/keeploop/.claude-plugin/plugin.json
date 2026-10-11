@@ -1,7 +1,7 @@
 {
   "name": "keeploop",
   "version": "0.23.1",
-  "description": "The personal context layer for your AI. Mail tools and the /keep- commands for Claude Code, from the Keeploop app on this Mac.",
+  "description": "Your Mac's Mail, Calendar, Messages, Notes, Contacts and Slack in Claude Code, through the Keeploop app. You choose what Claude can see and do.",
   "author": {
     "name": "Keeploop"
   },
@@ -13,9 +13,13 @@
   "supportUrl": "https://keeploop.app/support",
   "keywords": [
     "email",
-    "apple-mail",
-    "mcp",
-    "macos"
+    "calendar",
+    "imessage",
+    "notes",
+    "slack",
+    "contacts",
+    "macos",
+    "mcp"
   ],
   "license": "MIT"
 }

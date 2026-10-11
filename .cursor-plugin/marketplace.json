@@ -12,7 +12,7 @@
     {
       "name": "keeploop",
       "source": "plugins/keeploop",
-      "description": "The personal context layer for your AI. Keeploop's mail tools and the /keep- commands in Cursor, from the Keeploop app on your Mac."
+      "description": "Your Mac's Mail, Calendar, Messages, Notes, Contacts and Slack in Cursor, through the Keeploop app. You choose what Cursor can see and do."
     }
   ]
 }
