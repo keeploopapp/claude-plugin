@@ -1,4 +1,4 @@
-# Keeploop plugins for Claude Code, Cursor, Grok Build and Grok Bot
+# Keeploop plugins for Claude Code, Cursor, Gemini CLI, Grok Build and Grok Bot
 
 [Keeploop](https://keeploop.app) is the personal context layer for your AI: a Mac menu bar app
 that lets the AI apps you already use read your Mail, Messages, Calendar, Notes and Slack, right
@@ -6,7 +6,7 @@ on your Mac. Your data stays on your Mac, and you decide what each AI can see an
 
 This repository is the plugin marketplace for Keeploop. It has two plugins:
 
-- `keeploop` runs on your Mac, for Claude Code, Cursor and Grok Build. Local use is free.
+- `keeploop` runs on your Mac, for Claude Code, Cursor, Gemini CLI and Grok Build. Local use is free.
 - `keeploop-remote` is for Grok Bot. It connects through Keeploop's hosted connector at
   `https://mcp.keeploop.app/mcp` and is hidden in the Cursor editor. Needs Keeploop Pro or its
   free trial for remote use; local use is free.
@@ -68,6 +68,15 @@ plugin source. The plugin reports itself to Keeploop as Cursor, so Keeploop's pe
 ### Grok Build
 
 Grok Build reads Claude Code marketplaces, so the Claude Code commands above are all it needs.
+
+### Gemini CLI
+
+```
+gemini extensions install https://github.com/keeploopapp/claude-plugin
+```
+
+The extension runs the same local launcher as the plugin (`gemini-extension.json` and
+`GEMINI.md` at the repository root). Restart Gemini CLI, then ask "what needs my reply today?".
 
 ### Grok Bot
 

@@ -1,0 +1,15 @@
+{
+  "name": "keeploop",
+  "version": "0.24.1",
+  "description": "Your Mac's Mail, Calendar, Messages, Notes, Contacts and Slack in Gemini CLI, through the Keeploop app. Runs on your Mac with no Keeploop server in the path.",
+  "mcpServers": {
+    "keeploop": {
+      "command": "${extensionPath}${/}plugins${/}keeploop${/}server${/}keeploop-mcp",
+      "args": [
+        "--client",
+        "gemini-cli"
+      ]
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
