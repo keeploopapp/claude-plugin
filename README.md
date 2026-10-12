@@ -73,7 +73,8 @@ https://mcp.keeploop.app/mcp
 
 Sign in to Keeploop in the window the app opens, then approve the app on your Mac. The same URL
 works for every user; it reaches your Mac only after you approve it there. Remote apps are Read
-only until you allow more in Keeploop. Step by step for each app:
+only until you allow more in Keeploop. Web and phone AI apps need Keeploop Pro or its free trial;
+the plugin on your Mac works on Free. Step by step for each app:
 <https://keeploop.app/your-ai-apps>.
 
 ## What the plugin contains
