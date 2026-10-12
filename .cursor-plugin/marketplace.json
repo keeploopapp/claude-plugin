@@ -13,6 +13,14 @@
       "name": "keeploop",
       "source": "plugins/keeploop",
       "description": "Your Mac's Mail, Calendar, Messages, Notes, Contacts and Slack in Cursor, through the Keeploop app. You choose what Cursor can see and do."
+    },
+    {
+      "name": "keeploop-remote",
+      "source": "plugins/keeploop-remote",
+      "description": "Your Mac's Mail, Calendar, Messages, Notes, Contacts and Slack in Grok Bot, through Keeploop's hosted connector and the Keeploop app on your Mac. You choose what Grok Bot can see and do.",
+      "minClientVersions": {
+        "cursor": "never"
+      }
     }
   ]
 }

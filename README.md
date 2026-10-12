@@ -1,10 +1,17 @@
-# Keeploop plugin for Claude Code, Cursor and Grok Build
+# Keeploop plugins for Claude Code, Cursor, Grok Build and Grok Bot
 
 [Keeploop](https://keeploop.app) is the personal context layer for your AI: a Mac menu bar app
 that lets the AI apps you already use read your Mail, Messages, Calendar, Notes and Slack, right
 on your Mac. Your data stays on your Mac, and you decide what each AI can see and do.
 
-This repository is the plugin marketplace for Keeploop. The plugin adds:
+This repository is the plugin marketplace for Keeploop. It has two plugins:
+
+- `keeploop` runs on your Mac, for Claude Code, Cursor and Grok Build. Local use is free.
+- `keeploop-remote` is for Grok Bot. It connects through Keeploop's hosted connector at
+  `https://mcp.keeploop.app/mcp` and is hidden in the Cursor editor. Needs Keeploop Pro or its
+  free trial for remote use; local use is free.
+
+The local plugin adds:
 
 - **The Keeploop tools** (mail, threads and attachments, calendar and free time, messages, notes,
   contacts and Slack, monitors that wake the agent when a reply lands, drafts in your voice).
@@ -62,6 +69,11 @@ plugin source. The plugin reports itself to Keeploop as Cursor, so Keeploop's pe
 
 Grok Build reads Claude Code marketplaces, so the Claude Code commands above are all it needs.
 
+### Grok Bot
+
+In Grok Bot, open Connect apps, find Keeploop, and add it (this is the `keeploop-remote`
+plugin). Sign in to Keeploop in the window that opens, then approve Grok Bot on your Mac.
+
 ### Web and phone AI apps (Claude, ChatGPT, Grok, Poke and others)
 
 The plugin is for AI apps on your Mac. To use Keeploop from claude.ai, ChatGPT (including dots),
@@ -86,9 +98,12 @@ the plugin on your Mac works on Free. Step by step for each app:
 - `plugins/keeploop/hooks/hooks.json`: a Claude Code `SessionStart` hook that tells Keeploop
   which session is running, so a monitor can wake the session that asked for it. It does nothing
   when the app is not installed.
+- `plugins/keeploop-remote/`: the Grok Bot plugin. Its `mcp.json` holds only the address
+  `https://mcp.keeploop.app/mcp`, and it has the same `skills/keep-*`. It runs nothing on your
+  computer.
 - `.claude-plugin/` and `.cursor-plugin/`: the marketplace manifests.
 
-Nothing in the plugin makes a network connection, downloads code or installs packages. The
+Nothing in the local plugin makes a network connection, downloads code or installs packages. The
 launcher only runs the Keeploop app's connector on your Mac, and that talks to the Keeploop app
 over a local connection, so there is no Keeploop server in the path. If you also use Keeploop from
 a web or phone AI app, that is a separate connection: your data stays on your Mac, and Keeploop's

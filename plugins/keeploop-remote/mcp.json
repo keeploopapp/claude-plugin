@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "keeploop": {
+      "type": "http",
+      "url": "https://mcp.keeploop.app/mcp",
+      "placement": "server"
+    }
+  }
+}

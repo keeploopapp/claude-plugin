@@ -1,0 +1,29 @@
+{
+  "name": "keeploop-remote",
+  "displayName": "Keeploop Remote",
+  "version": "0.24.1",
+  "minClientVersions": {
+    "cursor": "never"
+  },
+  "description": "Your Mac's Mail, Calendar, Messages, Notes, Contacts and Slack in Grok Bot, through Keeploop's hosted connector and the Keeploop app on your Mac. You choose what Grok Bot can see and do.",
+  "author": {
+    "name": "Keeploop",
+    "email": "help@keeploop.app"
+  },
+  "homepage": "https://keeploop.app",
+  "repository": "https://github.com/keeploopapp/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "email",
+    "calendar",
+    "imessage",
+    "notes",
+    "slack",
+    "contacts",
+    "macos",
+    "mcp"
+  ],
+  "logo": "assets/logo.svg",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
+}
