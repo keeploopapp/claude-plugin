@@ -2,7 +2,7 @@
 
 [Keeploop](https://keeploop.app) is a Mac menu bar app that lets Claude read your Mail, Calendar,
 Messages, Notes, Contacts and Slack, right on your Mac. This plugin connects Claude Code and
-Cowork to it. Your data stays on your Mac, and you choose what Claude can see and do.
+Cowork to it. Your data stays on your Mac until an AI app you connect asks for it, and you choose what Claude can see and do.
 
 ## What it adds
 

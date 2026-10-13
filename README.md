@@ -2,7 +2,7 @@
 
 [Keeploop](https://keeploop.app) is the personal context layer for your AI: a Mac menu bar app
 that lets the AI apps you already use read your Mail, Messages, Calendar, Notes and Slack, right
-on your Mac. Your data stays on your Mac, and you decide what each AI can see and do.
+on your Mac. Your data stays on your Mac until an AI app you connect asks for it, and you decide what each AI can see and do.
 
 This repository is the plugin marketplace for Keeploop. It has two plugins:
 
