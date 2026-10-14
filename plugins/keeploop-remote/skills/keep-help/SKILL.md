@@ -1,6 +1,6 @@
 ---
 name: keep-help
-description: "List the Keeploop /keep- commands, one line each."
+description: "List the Keeploop /keep- commands, one line each. Use when asked what Keeploop commands there are."
 disable-model-invocation: true
 ---
 
@@ -13,7 +13,7 @@ Keeploop commands:
 - `/keep-reply`: Threads where someone is waiting on you, prioritized, with a suggested next step each.
 - `/keep-thread <subject or mail id>`: Summarize a whole email conversation: what happened, decisions, open questions.
 - `/keep-draft <mail id> <what to say>`: Draft a threaded reply that sounds like you. Saves a draft only; never sends.
-- `/keep-find <description>`: Find a file someone sent you by describing it, then read the best match.
+- `/keep-find <description>`: Find a file someone sent you, or one sent while they were on Cc, by describing it; read the best match, and save or send it on if asked.
 - `/keep-waiting`: Mail you sent that nobody has answered yet, oldest first, with a nudge suggestion.
 - `/keep-today`: Today's schedule, the replies you owe, and today's monitor hits, in one short view.
 - `/keep-free [length and range]`: Open slots on your calendar for a length and a range, for example 30m this week.
