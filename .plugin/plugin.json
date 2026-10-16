@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "keeploop",
-  "version": "0.25.10",
+  "version": "0.26.0",
   "description": "Your Mac's Mail, Calendar, Messages, Notes, Contacts and Slack in Cursor, through the Keeploop app. You choose what Cursor can see and do.",
   "author": {
     "name": "Keeploop",
