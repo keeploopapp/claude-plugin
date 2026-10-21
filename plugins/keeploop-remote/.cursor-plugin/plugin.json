@@ -1,7 +1,7 @@
 {
   "name": "keeploop-remote",
   "displayName": "Keeploop Remote",
-  "version": "0.26.0",
+  "version": "0.26.1",
   "minClientVersions": {
     "cursor": "never"
   },
