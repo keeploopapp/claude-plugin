@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Keeploop for Claude Code. The personal context layer for your AI.",
-    "version": "0.26.1"
+    "version": "0.27.0"
   },
   "plugins": [
     {
       "name": "keeploop",
       "source": "./plugins/keeploop",
       "description": "Your Mac's Mail, Calendar, Messages, Notes, Contacts and Slack in Claude Code, through the Keeploop app. You choose what Claude can see and do.",
-      "version": "0.26.1",
+      "version": "0.27.0",
       "author": {
         "name": "Keeploop"
       },
