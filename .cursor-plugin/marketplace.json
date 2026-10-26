@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Keeploop for Cursor. The personal context layer for your AI.",
-    "version": "0.27.0"
+    "version": "0.27.1"
   },
   "plugins": [
     {
