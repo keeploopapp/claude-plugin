@@ -1,6 +1,6 @@
 {
   "name": "keeploop",
-  "version": "0.27.7",
+  "version": "0.27.8",
   "description": "Your Mac's Mail, Calendar, Messages, Notes, Contacts and Slack in Claude Code, through the Keeploop app. You choose what Claude can see and do.",
   "author": {
     "name": "Keeploop"
